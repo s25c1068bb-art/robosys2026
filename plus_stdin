@@ -1,20 +1,12 @@
 #!/usr/bin/python3
 import sys
 
-x = 0.0
-for line in sys.stdin:
-    x += float(line)
-
-print(x)
-
-#!/usr/bin/python3
-import sys
-
 x = 0
+
 for line in sys.stdin:
     try:
         x += int(line)
     except ValueError:
-        x += float(line)
+        x += float(line.rstrip())
 
 print(x)
