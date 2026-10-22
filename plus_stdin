@@ -21,6 +21,10 @@ for line in sys.stdin:
         x += int(line)
     except ValueError:
         x += float(line.rstrip())
+<<<<<<< HEAD
 >>>>>>> ab6c28586f6dc378626f7ee8a3619e77fa578fe4
 
+=======
+#test
+>>>>>>> 452e9f778dbb6b56c1562cc5517dec4452dba6c9
 print(x)
