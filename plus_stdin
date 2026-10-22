@@ -1,30 +1,12 @@
 #!/usr/bin/python3
 import sys
-<<<<<<< HEAD
 #本来は関数の前後に空行を2行あける（スライドの都合で省略）
 def tonum(s):   #def 関数の名前(引数)で関数を定義
     try:
         return int(s)
     except ValueError:
         return float(s)
-=======
->>>>>>> ab6c28586f6dc378626f7ee8a3619e77fa578fe4
-
-x = 0
-
+x=0
 for line in sys.stdin:
-<<<<<<< HEAD
-        x += tonum(line)
-        
-=======
-    try:
-        x += int(line)
-    except ValueError:
-        x += float(line.rstrip())
-<<<<<<< HEAD
->>>>>>> ab6c28586f6dc378626f7ee8a3619e77fa578fe4
-
-=======
-#test
->>>>>>> 452e9f778dbb6b56c1562cc5517dec4452dba6c9
+    x+=tonum(line.rstrip())
 print(x)
