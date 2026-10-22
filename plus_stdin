@@ -8,5 +8,5 @@ for line in sys.stdin:
         x += int(line)
     except ValueError:
         x += float(line.rstrip())
-
+#test
 print(x)
